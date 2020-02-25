@@ -16,7 +16,7 @@ int H, W;	//	2 <= H:세로, W:가로 <= 20
 int N;		//	1 <= N:명령 <= 20
 
 pair<int, int> D;	//	다오
-pair<int, int> Z;	//	디즈니
+pair<int, int> Z;	//	디지니
 
 bool answer = false;
 
@@ -45,7 +45,7 @@ void play(int num, int cy, int cx, char orders[]) {
 		return;
 	}
 
-	if (cy == Z.first && cx == Z.second) {	//	현 위치에 디즈니가 있을 경우 --> 정답
+	if (cy == Z.first && cx == Z.second) {	//	현 위치에 디지니가 있을 경우 --> 정답
 		printf("YES \n");
 		for (int i = 0; i < num - 1; i++) {
 			printf("%c", orders[i]);
